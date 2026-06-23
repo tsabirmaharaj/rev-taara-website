@@ -1,13 +1,32 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+--burgundy:#5b0f22;
+--gold:#d4af37;
+--cream:#f8f4ef;
+--white:#ffffff;
+--text:#3a2b2b;
+}
+
+*{
 margin:0;
-background:#f7f4ef;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--cream);
+color:var(--text);
 font-family:'Montserrat',sans-serif;
-color:#4d1024;
+line-height:1.9;
 }
 
 header{
-background:#65001d;
-color:white;
+background:linear-gradient(to right,#4a0819,#5b0f22,#6e1630);
 padding:25px 8%;
 display:flex;
 justify-content:space-between;
@@ -15,33 +34,38 @@ align-items:center;
 position:sticky;
 top:0;
 z-index:1000;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .logo h1{
 font-family:'Cormorant Garamond',serif;
-font-size:48px;
-margin:0;
-color:#d7ab4c;
+font-size:3rem;
+color:var(--gold);
 }
 
 .logo p{
-margin-top:5px;
-font-size:14px;
+color:white;
+font-size:.95rem;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:30px;
+margin-left:25px;
 font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--gold);
 }
 
 .hero{
+padding:100px 8%;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:90px 8%;
-gap:60px;
+justify-content:space-between;
+gap:80px;
 }
 
 .hero-text{
@@ -50,33 +74,39 @@ flex:1;
 
 .script{
 font-family:'Great Vibes',cursive;
-font-size:54px;
-color:#cda349;
-margin-bottom:20px;
+font-size:4rem;
+color:var(--gold);
+margin-bottom:25px;
 }
 
 .hero h2{
 font-family:'Cormorant Garamond',serif;
-font-size:72px;
+font-size:5rem;
 line-height:1.1;
-margin-top:0;
+color:var(--burgundy);
 margin-bottom:30px;
 }
 
 .hero p{
-font-size:20px;
-line-height:1.8;
+font-size:1.15rem;
+margin-bottom:35px;
 }
 
 .button{
 display:inline-block;
-background:#65001d;
-color:white;
 padding:18px 40px;
-border-radius:50px;
+background:var(--burgundy);
+color:white;
 text-decoration:none;
-margin-top:30px;
+border-radius:50px;
 box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.button:hover{
+background:var(--gold);
+color:white;
+transform:translateY(-4px);
 }
 
 .hero-image{
@@ -86,10 +116,10 @@ text-align:center;
 
 .hero-image img{
 width:100%;
-max-width:520px;
-border-radius:30px;
+max-width:550px;
+border-radius:35px;
 border:8px solid white;
-box-shadow:0 15px 40px rgba(0,0,0,.2);
+box-shadow:0 20px 45px rgba(0,0,0,.2);
 }
 
 section{
@@ -97,79 +127,106 @@ padding:100px 8%;
 }
 
 section h2{
-text-align:center;
 font-family:'Cormorant Garamond',serif;
-font-size:56px;
-margin-bottom:50px;
-color:#65001d;
+font-size:3.5rem;
+color:var(--burgundy);
+text-align:center;
+margin-bottom:60px;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
 }
 
 .card{
 background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-text-align:center;
+padding:45px;
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card h3{
 font-family:'Cormorant Garamond',serif;
-font-size:34px;
-margin-top:0;
+font-size:2rem;
+color:var(--burgundy);
+margin-bottom:20px;
 }
 
 .card h4{
-font-size:42px;
-color:#cda349;
+font-size:3rem;
+color:var(--gold);
+margin-bottom:20px;
 }
 
-#travel,
 #contact{
 text-align:center;
-font-size:20px;
-line-height:2;
+}
+
+#contact p{
+margin-bottom:20px;
 }
 
 footer{
-background:#65001d;
-padding:70px;
+background:linear-gradient(to right,#4a0819,#5b0f22,#6e1630);
+padding:90px 8%;
 text-align:center;
-margin-top:100px;
+color:white;
+margin-top:80px;
 }
 
 .footer-script{
 font-family:'Great Vibes',cursive;
-font-size:48px;
-color:#d7ab4c;
+font-size:3rem;
+color:var(--gold);
+margin-bottom:20px;
+}
+
+footer h3{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+margin-bottom:20px;
+}
+
+footer p{
+max-width:700px;
+margin:auto;
 }
 
 @media(max-width:1000px){
 
 header{
 flex-direction:column;
+gap:20px;
 }
 
 nav{
-margin-top:20px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .hero{
-flex-direction:column;
+flex-direction:column-reverse;
 text-align:center;
 }
 
 .hero h2{
-font-size:50px;
+font-size:3.5rem;
 }
 
-.cards{
-grid-template-columns:1fr;
+.script{
+font-size:3rem;
+}
+
+.hero-image img{
+max-width:420px;
 }
 
 }
