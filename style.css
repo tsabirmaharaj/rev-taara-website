@@ -256,3 +256,140 @@ padding:50px 25px;
 }
 
 }
+/* SUBTITLES */
+
+.subtitle{
+max-width:700px;
+margin:15px auto 50px auto;
+text-align:center;
+font-family:'Great Vibes',cursive;
+font-size:2rem;
+color:#d4af37;
+}
+
+
+/* SECTION DIVIDERS */
+
+section{
+position:relative;
+}
+
+section::after{
+content:"♥";
+display:block;
+text-align:center;
+font-size:1.5rem;
+color:#d4af37;
+margin-top:60px;
+}
+
+
+/* LUXURY CARDS */
+
+.card{
+overflow:hidden;
+position:relative;
+}
+
+.card::before{
+content:"";
+display:block;
+height:4px;
+background:linear-gradient(to right,#d4af37,#f4e2a3,#d4af37);
+margin:-40px -40px 30px -40px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+
+/* PACKAGE PRICES */
+
+.card h4{
+font-size:4rem;
+font-family:'Cormorant Garamond',serif;
+font-weight:700;
+color:#d4af37;
+}
+
+
+/* SECTION TITLES */
+
+section h2{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+
+/* HERO TITLE */
+
+.hero h2{
+text-shadow:
+0 2px 8px rgba(0,0,0,.08);
+}
+
+
+/* BUTTON */
+
+.button{
+font-weight:600;
+letter-spacing:1px;
+}
+
+
+/* FOOTER */
+
+footer{
+border-top:3px solid #d4af37;
+}
+
+footer h3{
+color:#d4af37;
+}
+
+
+/* CONTACT SECTION */
+
+#contact p{
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+/* FAQ */
+
+#faq .card{
+background:#fffdf9;
+}
+
+
+/* SERVICES */
+
+#services .card{
+min-height:250px;
+}
+
+
+/* GALLERY */
+
+#gallery .card{
+min-height:220px;
+background:rgba(255,255,255,.9);
+}
+
+
+/* ABOUT */
+
+#about .card{
+background:#fffefc;
+}
+
+
+/* SOFT SHADOWS */
+
+.card{
+box-shadow:
+0 8px 30px rgba(0,0,0,.08);
+}
