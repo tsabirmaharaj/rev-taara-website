@@ -147,3 +147,10 @@ body {
     color: #5b1f2a;
     font-weight: 500;
 }
+.hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #7b5a5a;
+    margin-bottom: 35px;
+}
