@@ -50,7 +50,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin-bottom: 8px;
     color: #7b5a5a;
 }
 
@@ -153,4 +153,5 @@ body {
     font-style: italic;
     color: #7b5a5a;
     margin-bottom: 35px;
+    margin-top: 0;
 }
