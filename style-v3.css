@@ -89,3 +89,60 @@ body {
     border-radius: 30px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.15);
 }
+/* =========================
+   MEET REV TAARA
+   ========================= */
+
+#meet-taara {
+    padding: 120px 8%;
+    background: #fffdf9;
+}
+
+.meet-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.meet-image {
+    flex: 1;
+    text-align: center;
+}
+
+.meet-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.meet-text {
+    flex: 1;
+}
+
+.section-script {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #c9a227;
+    margin-bottom: 20px;
+}
+
+.meet-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: #5b1f2a;
+    margin-bottom: 30px;
+}
+
+.meet-text p {
+    margin-bottom: 22px;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.welcome-line {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #5b1f2a;
+    font-weight: 500;
+}
