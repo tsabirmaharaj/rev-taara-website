@@ -1,1 +1,91 @@
+/* =========================
+   EVERMORE & ALWAYS V3
+   ========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f5ef;
+    color: #3d2b2b;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-script {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #c9a227;
+    margin-bottom: 20px;
+}
+
+.hero h1,
+#hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #5b1f2a;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+#hero h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 35px;
+    color: #7b5a5a;
+}
+
+.hero-intro {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.hero-welcome {
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 16px 36px;
+    background: #5b1f2a;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
