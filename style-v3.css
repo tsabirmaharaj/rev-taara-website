@@ -155,3 +155,69 @@ body {
     margin-bottom: 35px;
     margin-top: 0;
 }
+/* =========================
+   TELL ME YOUR STORY
+   ========================= */
+
+#tell-your-story {
+    padding: 120px 8%;
+    background: #fdfaf5;
+    text-align: center;
+}
+
+.story-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.story-lines {
+    margin: 60px 0;
+}
+
+.story-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #5b1f2a;
+    margin: 35px 0;
+
+    opacity: 0;
+    animation: fadeStory 1.5s ease forwards;
+}
+
+.story-line:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.story-line:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+.story-line:nth-child(3) {
+    animation-delay: 4.5s;
+}
+
+.story-line:nth-child(4) {
+    animation-delay: 6.5s;
+}
+
+.story-text {
+    margin-top: 80px;
+}
+
+.story-text p {
+    margin-bottom: 30px;
+    font-size: 1.15rem;
+    line-height: 2;
+}
+
+@keyframes fadeStory {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
