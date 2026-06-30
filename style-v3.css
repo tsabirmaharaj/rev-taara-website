@@ -286,3 +286,10 @@ body {
     border: 2px solid #c9a227;
     transform: scale(1.04);
 }
+.meet-highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #5b1f2a;
+    text-align: center;
+    margin: 32px 0;
+}
