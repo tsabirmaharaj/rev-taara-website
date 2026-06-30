@@ -117,7 +117,7 @@ body {
 }
 
 .meet-text {
-    flex: 1;
+    text-align: left;
 }
 
 .section-script {
