@@ -423,9 +423,9 @@ footer {
     transition: all 0.35s ease;
 }
 
-.begin-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+.hero-button {
+    background: #5b1f2a;
+    color: white;
 }
 /* =========================
    FLOW & RHYTHM SYSTEM
