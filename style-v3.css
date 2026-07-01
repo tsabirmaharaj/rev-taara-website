@@ -79,18 +79,22 @@ body {
     line-height: 2;
 }
 
-.hero-button {
+/* =========================
+   BUTTON RESET (SAFE STATE)
+   ========================= */
+
+.hero-button,
+.begin-button {
     display: inline-block;
-    padding: 16px 36px;
+    margin-top: 50px;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.35s ease;
+
     background: #5b1f2a;
     color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    transition: 0.3s ease;
-}
-
-.hero-button:hover {
-    transform: translateY(-3px);
 }
 
 .hero-image {
@@ -411,9 +415,12 @@ footer {
     margin-top: 30px;
 }
 
+/* =========================
+   BUTTON RESET (SAFE STATE)
+   ========================= */
+
+.hero-button,
 .begin-button {
-    background: #5b1f2a;
-    color: white;
     display: inline-block;
     margin-top: 50px;
     padding: 18px 40px;
@@ -421,10 +428,9 @@ footer {
     text-decoration: none;
     font-size: 1.1rem;
     transition: all 0.35s ease;
-}
-.begin-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+
+    background: #5b1f2a;
+    color: white;
 }
 
 /* =========================
