@@ -459,3 +459,22 @@ section {
 #contact {
     padding: 170px 8%;
 }
+/* =========================
+   SECTION FLOW DIVIDERS
+   ========================= */
+
+section {
+    position: relative;
+}
+
+/* soft separation between sections */
+section:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: linear-gradient(to right, transparent, #c9a227, transparent);
+    opacity: 0.4;
+}
