@@ -34,7 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 8%;
+    padding: 90px 8%;
     gap: 80px;
 }
 
@@ -46,7 +46,7 @@ body {
 .hero-script {
     font-family: 'Great Vibes', cursive;
     font-size: 2.2rem;
-    color: #c9a227;
+    color: var(--gold);
     margin-bottom: 20px;
 }
 
@@ -137,7 +137,7 @@ body {
 .section-script {
     font-family: 'Great Vibes', cursive;
     font-size: 2rem;
-    color: #c9a227;
+    color: var(--gold);
     margin-bottom: 20px;
 }
 
@@ -287,7 +287,7 @@ body {
 
 .price {
     font-size: 2rem;
-    color: #c9a227;
+    color: var(--gold);
     font-weight: 600;
     margin-bottom: 25px;
 }
@@ -297,7 +297,7 @@ body {
 }
 
 .featured {
-    border: 2px solid #c9a227;
+    border: 2px solid var(--gold);
     transform: scale(1.04);
 }
 .meet-highlight {
@@ -417,15 +417,15 @@ footer {
     padding: 18px 40px;
     border-radius: 50px;
     text-decoration: none;
-    background: #c9a227;
+    background: var(--gold);
     color: white;
     font-size: 1.1rem;
-    transition: .3s ease;
+    transition: all 0.35s ease;
 }
 
 .begin-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 }
 /* =========================
    FLOW & RHYTHM SYSTEM
@@ -442,7 +442,7 @@ section {
 
 /* Meet Rev. Taara — airy introduction */
 #meet-taara {
-    padding: 140px 8% 120px;
+    padding: 150px 8%;
 }
 
 /* Story / philosophy — slightly tighter focus */
@@ -457,22 +457,22 @@ section {
 
 /* Story unfolding — airy, poetic */
 #story-unfold {
-    padding: 150px 8%;
+    padding: 120px 8%;
 }
 
 /* FAQ — more structured, less airy */
 #faq {
-    padding: 110px 8%;
+    padding: 120px 8%;
 }
 
 /* Stories in Bloom — soft reflection */
 #stories-in-bloom {
-    padding: 140px 8%;
+    padding: 150px 8%;
 }
 
 /* Contact — final breath / spacious ending */
 #contact {
-    padding: 170px 8%;
+    padding: 150px 8%;
 }
 /* =========================
    SECTION FLOW DIVIDERS
@@ -490,7 +490,7 @@ section:not(:last-child)::after {
     height: 1px;
     margin: 0 auto;
     margin-top: 80px;
-    background: linear-gradient(to right, transparent, #c9a227, transparent);
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
     opacity: 0.4;
 }
 /* =========================
@@ -517,4 +517,16 @@ section:not(:last-child)::after {
     to {
         opacity: 1;
     }
+}
+:root {
+    --gold: #var(--gold);
+    --wine: #5b1f2a;
+    --ink: #6f5b5b;
+}
+body {
+    letter-spacing: 0.2px;
+}
+
+h2, h3 {
+    letter-spacing: 0.3px;
 }
