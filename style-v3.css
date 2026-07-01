@@ -478,3 +478,18 @@ section:not(:last-child)::after {
     background: linear-gradient(to right, transparent, #c9a227, transparent);
     opacity: 0.4;
 }
+/* =========================
+   SCROLL REVEAL LAYER
+   ========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    will-change: opacity, transform;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
