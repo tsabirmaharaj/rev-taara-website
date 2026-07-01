@@ -332,3 +332,32 @@ footer {
     margin-bottom: 16px;
     line-height: 1.9;
 }
+/* =========================
+   STORIES IN BLOOM
+   ========================= */
+
+#stories-in-bloom {
+    padding: 120px 8%;
+    background: #fdfaf5;
+    text-align: center;
+}
+
+.bloom-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.bloom-opening {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #5b1f2a;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.bloom-text {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #6f5b5b;
+    font-style: italic;
+}
