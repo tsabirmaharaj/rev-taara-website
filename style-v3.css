@@ -412,3 +412,50 @@ footer {
 .begin-button:hover {
     transform: translateY(-3px);
 }
+/* =========================
+   FLOW & RHYTHM SYSTEM
+   ========================= */
+
+section {
+    position: relative;
+}
+
+/* HERO stays strong and full */
+#hero {
+    padding: 80px 8%;
+}
+
+/* Meet Rev. Taara — airy introduction */
+#meet-taara {
+    padding: 140px 8% 120px;
+}
+
+/* Story / philosophy — slightly tighter focus */
+#tell-your-story {
+    padding: 110px 8%;
+}
+
+/* Chapter pricing — structured, grounded */
+#beginning {
+    padding: 130px 8%;
+}
+
+/* Story unfolding — airy, poetic */
+#story-unfold {
+    padding: 150px 8%;
+}
+
+/* FAQ — more structured, less airy */
+#faq {
+    padding: 110px 8%;
+}
+
+/* Stories in Bloom — soft reflection */
+#stories-in-bloom {
+    padding: 140px 8%;
+}
+
+/* Contact — final breath / spacious ending */
+#contact {
+    padding: 170px 8%;
+}
