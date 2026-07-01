@@ -507,3 +507,13 @@ section:not(:last-child)::after {
     opacity: 1;
     transform: translateY(0);
 }
+#hero img {
+    opacity: 0;
+    animation: heroImgFade 1.2s ease forwards;
+}
+
+@keyframes heroImgFade {
+    to {
+        opacity: 1;
+    }
+}
