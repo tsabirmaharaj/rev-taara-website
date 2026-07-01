@@ -412,21 +412,21 @@ footer {
 }
 
 .begin-button {
+    background: #5b1f2a;
+    color: white;
     display: inline-block;
     margin-top: 50px;
     padding: 18px 40px;
     border-radius: 50px;
     text-decoration: none;
-    background: var(--gold);
-    color: white;
     font-size: 1.1rem;
     transition: all 0.35s ease;
 }
-
-.hero-button {
-    background: #5b1f2a;
-    color: white;
+.begin-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 }
+
 /* =========================
    FLOW & RHYTHM SYSTEM
    ========================= */
