@@ -130,19 +130,7 @@ body {
    BUTTON RESET (SAFE STATE)
    ========================= */
 
-.hero-button,
-.begin-button {
-    display: inline-block;
-    margin-top: 50px;
-    padding: 18px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.35s ease;
 
-    background: #5b1f2a;
-    color: white;
-}
 
 .hero-image {
     flex: 0 0 450px;
@@ -466,19 +454,6 @@ footer {
    BUTTON RESET (SAFE STATE)
    ========================= */
 
-.hero-button,
-.begin-button {
-    display: inline-block;
-    margin-top: 50px;
-    padding: 18px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.35s ease;
-
-    background: #5b1f2a;
-    color: white;
-}
 
 /* =========================
    FLOW & RHYTHM SYSTEM
@@ -604,6 +579,7 @@ h2, h3 {
     opacity: 0.9;
 }
 .hero-image img {
+
     width: 420px;
     border-radius: 18px;
     box-shadow: 0 30px 70px rgba(0,0,0,0.15);
@@ -618,14 +594,8 @@ h2, h3 {
     z-index: 1;
 }
 
-.hero-button:hover,
-.begin-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
-}
-
-.hero-button,
-.begin-button {
+.begin-button,
+.hero-button {
     display: inline-block;
     padding: 18px 40px;
     border-radius: 50px;
@@ -637,5 +607,10 @@ h2, h3 {
     font-size: 1.1rem;
 
     transition: transform 0.35s ease, box-shadow 0.35s ease;
-    will-change: transform;
+}
+
+.begin-button:hover,
+.hero-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 }
