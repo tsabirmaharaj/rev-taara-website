@@ -130,8 +130,6 @@ body {
    BUTTON RESET (SAFE STATE)
    ========================= */
 
-
-
 .hero-image {
     flex: 0 0 450px;
     text-align: center;
@@ -594,8 +592,7 @@ h2, h3 {
     z-index: 1;
 }
 
-.begin-button,
-.hero-button {
+.cta-button {
     display: inline-block;
     padding: 18px 40px;
     border-radius: 50px;
@@ -609,8 +606,7 @@ h2, h3 {
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.begin-button:hover,
-.hero-button:hover {
+.cta-button:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 }
