@@ -1,3 +1,14 @@
+/* =========================
+   EVERMORE & ALWAYS COLOR SYSTEM
+   ========================= */
+
+:root {
+    --wine: #5b1f2a;
+    --gold: #c9a227;
+    --cream: #fdfaf5;
+    --ink: #6f5b5b;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -523,12 +534,7 @@ section:not(:last-child)::after {
     to {
         opacity: 1;
     }
-}
-:root {
-    --gold: #var(--gold);
-    --wine: #5b1f2a;
-    --ink: #6f5b5b;
-}
+
 body {
     letter-spacing: 0.2px;
 }
