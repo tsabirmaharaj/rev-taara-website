@@ -610,3 +610,20 @@ h2, h3 {
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.14);
 }
+a.cta-button {
+    display: inline-block !important;
+    padding: 18px 40px !important;
+    border-radius: 50px !important;
+
+    background: var(--wine) !important;
+    color: white !important;
+
+    text-decoration: none !important;
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+a.cta-button:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14) !important;
+}
