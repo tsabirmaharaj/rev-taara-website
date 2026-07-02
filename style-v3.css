@@ -631,3 +631,23 @@ a.cta-button:hover {
     transform: translateY(-4px) !important;
     box-shadow: 0 12px 28px rgba(0,0,0,0.14) !important;
 }
+a.cta-button {
+    all: unset;
+    display: inline-block;
+
+    padding: 18px 40px;
+    border-radius: 50px;
+
+    background: #5b1f2a;
+    color: white;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+a.cta-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
