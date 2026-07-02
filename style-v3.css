@@ -542,3 +542,42 @@ body {
 h2, h3 {
     letter-spacing: 0.3px;
 }
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 80px 8%;
+    position: relative;
+    overflow: hidden;
+}
+.hero-text h1 {
+    font-size: 3.4rem;
+    line-height: 1.15;
+    color: var(--wine);
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 520px;
+    line-height: 1.8;
+    color: var(--ink);
+    opacity: 0.9;
+}
+.hero-image img {
+    width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-container {
+    position: relative;
+    z-index: 1;
+}
