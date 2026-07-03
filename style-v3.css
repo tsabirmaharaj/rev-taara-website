@@ -1025,12 +1025,21 @@ section:nth-child(even) {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 24px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
     }
 
     .hero-image {
         width: 100%;
-        margin-top: 20px;
+        max-width: 420px;
+        margin: 0 auto;
     }
 
     .hero-image img {
