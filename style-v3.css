@@ -857,3 +857,26 @@ body::after {
     background: #fdfaf5;
 }
 
+.hero-image {
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+
+    border: 1px solid rgba(201,162,39,0.25);
+    border-radius: 26px;
+
+    pointer-events: none;
+}
+
+.hero-script {
+    opacity: 0.9;
+}
+
+.hero h1 {
+    letter-spacing: 0.3px;
+}
+
