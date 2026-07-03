@@ -1019,3 +1019,23 @@ section:nth-child(even) {
     z-index: 9999;
 }
 
+@media (max-width: 768px) {
+
+    #hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
