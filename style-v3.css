@@ -766,3 +766,34 @@ img {
     filter: contrast(1.05) saturate(1.05);
 }
 
+section {
+    position: relative;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(91, 31, 42, 0.08),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #fdfaf5,
+        #fbf7f2,
+        #fdfaf5
+    );
+}
+
