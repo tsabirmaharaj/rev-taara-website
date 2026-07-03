@@ -1023,3 +1023,19 @@ section:nth-child(even) {
         display: block;
     }
 }
+
+#hero {
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-image {
+    box-shadow: 0 30px 80px rgba(0,0,0,0.14);
+    transform: translateY(2px);
+}
+
