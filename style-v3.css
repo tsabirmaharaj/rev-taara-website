@@ -961,3 +961,36 @@ section:nth-child(even) {
     position: relative;
     z-index: 2;
 }
+
+#hero {
+    outline: 3px solid red;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 120px;
+    height: 120px;
+
+    background: blue;
+
+    z-index: 9999;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 120px;
+    height: 120px;
+
+    background: limegreen;
+
+    z-index: 9999;
+}
+
