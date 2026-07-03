@@ -637,3 +637,25 @@ body {
 section:not(:last-child)::after {
     opacity: 0.25;
 }
+
+p {
+    color: var(--ink);
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+}
+
+section {
+    padding: 140px 8%;
+}
+
+#hero {
+    padding: 80px 8%;
+}
+
+#contact {
+    padding: 160px 8%;
+}
