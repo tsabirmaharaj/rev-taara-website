@@ -543,7 +543,7 @@ section:not(:last-child)::after {
     to {
         opacity: 1;
     }
-
+}
 body {
     letter-spacing: 0.2px;
 }
