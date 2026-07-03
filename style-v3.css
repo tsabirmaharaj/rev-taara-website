@@ -633,3 +633,7 @@ h2, h3 {
 body {
     font-weight: 300;
 }
+
+section:not(:last-child)::after {
+    opacity: 0.25;
+}
