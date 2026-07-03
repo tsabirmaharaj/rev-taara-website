@@ -797,3 +797,40 @@ body {
     );
 }
 
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+
+    background-image:
+        url("https://www.transparenttextures.com/patterns/soft-paper.png");
+
+    opacity: 0.06;
+    mix-blend-mode: multiply;
+}
+
+#hero::before,
+#contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 10% 20%, rgba(201,162,39,0.08), transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(91,31,42,0.06), transparent 45%);
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before,
+body::before,
+body::after {
+    z-index: 0;
+}
+
