@@ -97,17 +97,6 @@ body {
     );
 }
 
-#hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at center,
-        rgba(255, 255, 255, 0.35),
-        transparent 70%
-    );
-    pointer-events: none;
-}
 
 .hero-container {
     position: relative;
@@ -810,18 +799,6 @@ body::after {
     mix-blend-mode: multiply;
 }
 
-#hero::before,
-#contact::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-
-    background:
-        radial-gradient(circle at 10% 20%, rgba(201,162,39,0.08), transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(91,31,42,0.06), transparent 45%);
-}
-
 section {
     position: relative;
     z-index: 1;
@@ -831,17 +808,6 @@ section {
 body::before,
 body::after {
     z-index: 0;
-}
-
-#hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-
-    background:
-        radial-gradient(circle at 15% 30%, rgba(201,162,39,0.10), transparent 35%),
-        radial-gradient(circle at 85% 70%, rgba(91,31,42,0.08), transparent 40%);
 }
 
 #meet-taara,
@@ -882,22 +848,6 @@ body::after {
 #hero {
     position: relative;
     overflow: hidden;
-}
-
-#hero::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: -40px;
-
-    width: 220px;
-    height: 220px;
-
-    background-size: contain;
-
-    opacity: 0.9;
-    pointer-events: none;
-    z-index: 2;
 }
 
 #hero::after {
@@ -973,3 +923,41 @@ section:nth-child(even) {
     background: #fffdf9;
 }
 
+/* ===== HERO FINAL VISUAL LAYER (CLEAN) ===== */
+
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(201,162,39,0.12), transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(91,31,42,0.08), transparent 45%);
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 10% 80%, rgba(201,162,39,0.08), transparent 45%),
+        radial-gradient(circle at 90% 70%, rgba(91,31,42,0.06), transparent 50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 2;
+}
