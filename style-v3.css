@@ -1092,3 +1092,27 @@ section:nth-child(even) {
     z-index: 2;
 }
 
+.hero {
+    outline: 2px solid rgba(255, 0, 0, 0.25);
+}
+
+.hero-content {
+    outline: 2px solid rgba(0, 128, 255, 0.25);
+}
+
+.hero-image {
+    outline: 2px solid rgba(0, 255, 0, 0.25);
+}
+
+.hero-content h1 {
+    transform: scale(1.02);
+    letter-spacing: 0.5px;
+    color: var(--wine);
+}
+
+.hero-image img {
+    border-radius: 22px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.18);
+    transform: translateY(0px);
+}
+
