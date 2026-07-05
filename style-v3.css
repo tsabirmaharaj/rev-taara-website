@@ -39,7 +39,7 @@ body {
     line-height: 1.7;
 }
 
-#hero {
+.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ body {
 }
 
 .hero h1,
-#hero h1 {
+.hero h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 5rem;
     font-weight: 500;
@@ -69,7 +69,7 @@ body {
     margin-bottom: 15px;
 }
 
-#hero h2 {
+.hero h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -88,7 +88,7 @@ body {
     line-height: 2;
 }
 
-#hero {
+.hero {
     background: radial-gradient(
         circle at top,
         rgba(255, 250, 244, 0.9) 0%,
@@ -449,7 +449,7 @@ section {
 }
 
 /* HERO stays strong and full */
-#hero {
+.hero {
     padding: 80px 8%;
 }
 
@@ -521,7 +521,7 @@ section:not(:last-child)::after {
     opacity: 1;
     transform: translateY(0);
 }
-#hero img {
+.hero img {
     opacity: 0;
     animation: heroImgFade 1.2s ease forwards;
 }
@@ -538,7 +538,7 @@ body {
 h2, h3 {
     letter-spacing: 0.3px;
 }
-#hero {
+.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -603,7 +603,7 @@ section {
     padding: 140px 8%;
 }
 
-#hero {
+.hero {
     padding: 80px 8%;
 }
 
@@ -641,7 +641,7 @@ section {
     padding: 140px 8%;
 }
 
-#hero {
+.hero {
     padding: 80px 8%;
 }
 
@@ -845,12 +845,12 @@ body::after {
     letter-spacing: 0.3px;
 }
 
-#hero {
+.hero {
     position: relative;
     overflow: hidden;
 }
 
-#hero::after {
+.hero::after {
     content: "";
     position: absolute;
     bottom: -40px;
@@ -889,7 +889,7 @@ body::before {
         radial-gradient(circle at 50% 90%, rgba(253,250,245,0.9), transparent 60%);
 }
 
-#hero::before {
+.hero::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -925,12 +925,12 @@ section:nth-child(even) {
 
 /* ===== HERO FINAL VISUAL LAYER (CLEAN) ===== */
 
-#hero {
+.hero {
     position: relative;
     overflow: hidden;
 }
 
-#hero::before {
+.hero::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -941,7 +941,7 @@ section:nth-child(even) {
         radial-gradient(circle at 85% 30%, rgba(91,31,42,0.08), transparent 45%);
 }
 
-#hero::after {
+.hero::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -962,11 +962,11 @@ section:nth-child(even) {
     z-index: 2;
 }
 
-#hero {
+.hero {
     outline: 3px solid red;
 }
 
-#hero::after {
+.hero::after {
     content: "";
     position: absolute;
     bottom: -70px;
@@ -995,7 +995,7 @@ section:nth-child(even) {
 
 @media (max-width: 768px) {
 
-    #hero {
+    .hero {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -1023,7 +1023,7 @@ section:nth-child(even) {
     }
 }
 
-#hero {
+.hero {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
@@ -1038,12 +1038,12 @@ section:nth-child(even) {
     transform: translateY(2px);
 }
 
-#hero {
+.hero {
     position: relative;
     overflow: hidden;
 }
 
-#hero::before {
+.hero::before {
     content: "";
     position: absolute;
     top: -60px;
@@ -1062,7 +1062,7 @@ section:nth-child(even) {
     pointer-events: none;
 }
 
-#hero::after {
+.hero::after {
     content: "";
     position: absolute;
     bottom: -70px;
@@ -1091,15 +1091,15 @@ section:nth-child(even) {
     z-index: 2;
 }
 
-#hero {
+.hero {
     outline: 2px solid rgba(255, 0, 0, 0.35);
 }
 
-#hero .hero-content {
+.hero .hero-content {
     outline: 2px solid rgba(0, 128, 255, 0.35);
 }
 
-#hero .hero-image {
+.hero .hero-image {
     outline: 2px solid rgba(0, 255, 0, 0.35);
 }
 
@@ -1115,7 +1115,7 @@ section:nth-child(even) {
     transform: translateY(0px);
 }
 
-#hero {
+.hero {
     outline: 3px solid red !important;
 }
 
