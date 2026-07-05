@@ -999,6 +999,7 @@ section:nth-child(even) {
         align-items: center;
         padding: 40px 20px;
         gap: 24px;
+        outline: 3px solid red !important;
     }
 
     .hero-content {
