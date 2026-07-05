@@ -1115,3 +1115,14 @@ section:nth-child(even) {
     transform: translateY(0px);
 }
 
+#hero {
+    outline: 3px solid red !important;
+}
+
+.hero-content {
+    outline: 2px solid blue !important;
+}
+
+.hero-image {
+    outline: 2px solid green !important;
+}
