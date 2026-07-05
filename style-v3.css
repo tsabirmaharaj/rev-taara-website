@@ -1172,3 +1172,16 @@ section:nth-child(even) {
   .hero-image { animation-delay: 0.4s; }
 }
 
+/* Initial state for all sections */
+section {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Class applied when section is in view */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
