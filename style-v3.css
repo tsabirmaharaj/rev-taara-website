@@ -1122,3 +1122,15 @@ section:nth-child(even) {
 .hero-image {
     outline: 2px solid green !important;
 }
+
+.hero-container {
+    outline: 3px solid red !important;
+}
+
+.hero-content {
+    outline: 2px solid blue !important;
+}
+
+.hero-image {
+    outline: 2px solid green !important;
+}
