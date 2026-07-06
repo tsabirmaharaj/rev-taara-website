@@ -1231,3 +1231,53 @@ section.visible {
   .hero-image { animation-delay: 0.4s; }
 }
 
+@keyframes slowFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* HERO FLOAT */
+.hero-image img {
+  animation: slowFloat 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* SECTION REVEAL */
+section {
+  opacity: 0;
+  transform: translateY(24px) scale(0.995);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* CTA */
+.cta-button {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.5s ease,
+              letter-spacing 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  letter-spacing: 0.5px;
+}
+
+/* IMAGE HOVER */
+.hero-image img,
+.meet-image img {
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.8s ease;
+}
+
+.hero-image img:hover,
+.meet-image img:hover {
+  animation-play-state: paused;
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 35px 90px rgba(0,0,0,0.18);
+}
