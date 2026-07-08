@@ -597,6 +597,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+   <script>
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Add visible class to the section itself
+      entry.target.classList.add('visible');
+
+      // Stagger each child inside the section
+      const children = Array.from(entry.target.children);
+      children.forEach((child, index) => {
+        child.style.opacity = 0;
+        child.style.transform = 'translateY(15px)';
+        child.style.transition = `opacity 0.8s ease-out ${index * 0.2}s, transform 0.8s ease-out ${index * 0.2}s`;
+        requestAnimationFrame(() => {
+          child.style.opacity = 1;
+          child.style.transform = 'translateY(0)';
+        });
+      });
+
+      observer.unobserve(entry.target); // animate only once
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
 </body>
 </html>
 
