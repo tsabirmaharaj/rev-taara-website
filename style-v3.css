@@ -966,6 +966,20 @@ section:nth-child(even) {
     outline: 3px solid red;
 }
 
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 120px;
+    height: 120px;
+
+    background: blue;
+
+    z-index: 9999;
+}
+
 #hero::after {
     content: "";
     position: absolute;
@@ -992,6 +1006,17 @@ section:nth-child(even) {
 
    section + section {
     border-top: 1px solid rgba(91,31,42,0.08);
+}
+
+   
+    right: 20px;
+
+    width: 120px;
+    height: 120px;
+
+    background: limegreen;
+
+    z-index: 9999;
 }
 
 @media (max-width: 768px) {
