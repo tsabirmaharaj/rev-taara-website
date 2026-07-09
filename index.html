@@ -32,9 +32,10 @@
         </h1>
 
         <h2>
-    by Reverend Taara, Story Weaver • Officiant • Celebrant
+    by Reverend Taara Sabir Maharaj <br>
+            Story Weaver • Officiant • Celebrant
 </h2>
-        
+      
 <p class="hero-subtitle">
     for the Wonderfully Traditional and the Beautifully Unconventional
 </p>
@@ -598,3 +599,22 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </body>
 </html>
+
+<script id="scrollfade-js">
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // animate once
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
