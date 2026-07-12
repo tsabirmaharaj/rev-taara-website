@@ -610,16 +610,30 @@ h2, h3 {
     color: var(--ink);
     opacity: 0.9;
 }
-.hero-image img {
-
-    width: 420px;
-    border-radius: 18px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
-}
 .hero-image {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-image img {
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    border-radius: 22px;
+
+    filter: contrast(1.05) saturate(1.05);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.18);
+
+    transform: translateY(0);
+
+    position: relative;
+    z-index: 2;
 }
 
 .cta-button {
@@ -1046,7 +1060,6 @@ section:nth-child(even) {
         align-items: center;
         padding: 40px 20px;
         gap: 24px;
-        outline: 3px solid red !important;
     }
 
     .hero-content {
@@ -1151,36 +1164,6 @@ section:nth-child(even) {
     transform: scale(1.02);
     letter-spacing: 0.5px;
     color: var(--wine);
-}
-
-.hero-image img {
-    border-radius: 22px;
-    box-shadow: 0 30px 70px rgba(0,0,0,0.18);
-    transform: translateY(0px);
-}
-
-.hero {
-    outline: 3px solid red !important;
-}
-
-.hero-content {
-    outline: 2px solid blue !important;
-}
-
-.hero-image {
-    outline: 2px solid green !important;
-}
-
-.hero-container {
-    outline: 3px solid red !important;
-}
-
-.hero-content {
-    outline: 2px solid blue !important;
-}
-
-.hero-image {
-    outline: 2px solid green !important;
 }
 
 /* Fade-in animation */
