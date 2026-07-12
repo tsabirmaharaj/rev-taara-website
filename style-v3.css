@@ -177,7 +177,7 @@ body {
     margin-bottom: 30px;
 }
 
-.meet-text p {
+.meet-text p:not(.section-script) {
     margin-bottom: 22px;
     font-size: 1.1rem;
     line-height: 1.9;
