@@ -152,8 +152,8 @@ body {
 
     position: absolute;
 
-    width: 118%;
-    height: 122%;
+    width: 132%;
+    height: 138%;
 
     border-radius: 50%;
 
@@ -165,7 +165,7 @@ body {
             rgba(245,236,214,0) 100%
         );
 
-    filter: blur(32px);
+    filter: blur(55px);
 
     z-index: 1;
 
