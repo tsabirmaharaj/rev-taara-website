@@ -648,7 +648,7 @@ h2, h3 {
     height: auto;
     display: block;
 
-    border-radius: 48% / 18%;
+    border-radius: 22px;
    
     filter: contrast(1.05) saturate(1.05);
 
