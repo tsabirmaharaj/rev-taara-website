@@ -648,8 +648,8 @@ h2, h3 {
     height: auto;
     display: block;
 
-    border-radius: 22px;
-
+    border-radius: 42% / 16%;
+   
     filter: contrast(1.05) saturate(1.05);
 
     box-shadow:
