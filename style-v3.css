@@ -152,6 +152,31 @@ body {
 
     position: absolute;
 
+    width: 118%;
+    height: 122%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(245,236,214,.92) 0%,
+            rgba(245,236,214,.55) 58%,
+            rgba(245,236,214,0) 100%
+        );
+
+    filter: blur(32px);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
     width: 115%;
     height: 118%;
 
