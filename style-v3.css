@@ -1317,7 +1317,7 @@ section.visible {
 
 .hero {
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1.05fr 0.75fr;
     align-items: start;
 
     gap: 40px;
