@@ -1333,10 +1333,22 @@ section.visible {
 
 .hero-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
 
-    margin-top: -40px;
+    margin-top: -120px;     /* move upward */
+    margin-right: 40px;     /* move toward right edge */
+}
+
+.hero-image::before {
+    width: 115%;
+    height: 115%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    filter: blur(38px);
 }
 
 .hero-image img {
