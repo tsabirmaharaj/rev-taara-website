@@ -1340,6 +1340,17 @@ section.visible {
     margin-right: 40px;     /* move toward right edge */
 }
 
+.hero-image::before {
+    width: 115%;
+    height: 115%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    filter: blur(38px);
+}
+
 .hero-image img {
     width: 500px;
     max-width: 100%;
