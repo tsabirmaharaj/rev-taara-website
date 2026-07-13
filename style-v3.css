@@ -1353,9 +1353,10 @@ section.visible {
 ================================================== */
 
 .hero {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 70px;
 }
 
 .hero-content {
@@ -1367,6 +1368,8 @@ section.visible {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translate(-70px, -70px);
 }
 
 .hero-image img {
