@@ -1369,7 +1369,7 @@ section.visible {
     justify-content: center;
     align-items: center;
 
-    transform: translate(-70px, -70px);
+    outline: 5px solid blue !important;
 }
 
 .hero-image img {
