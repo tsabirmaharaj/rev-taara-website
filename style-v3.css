@@ -1345,3 +1345,33 @@ section.visible {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 35px 90px rgba(0,0,0,0.18);
 }
+
+/* ==================================================
+   HERO MASTER OVERRIDES
+   This section controls the final hero appearance.
+   Future hero edits belong ONLY here.
+================================================== */
+
+.hero {
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
