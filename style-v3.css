@@ -1356,6 +1356,12 @@ section.visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    min-height: 78vh;
+
+    padding-top: 60px;
+    padding-bottom: 20px;
+
     gap: 70px;
 }
 
