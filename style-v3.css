@@ -1371,14 +1371,13 @@ section.visible {
 
 .hero-image {
     position: relative;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
 
-    outline: 5px solid blue !important;
-
-    margin-top: -120px;
-    margin-left: -120px;
+    margin-top: -220px;
+    margin-right: 40px;
 }
 
 .hero-image img {
