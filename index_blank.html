@@ -58,7 +58,7 @@
 
     <div class="hero-image">
 
-        <img src="Headshot.png" alt="Rev. Taara Sabir Maharaj">
+        <img src="hero-framed.jpg" alt="Rev. Taara Sabir Maharaj">
 
     </div>
 
@@ -578,7 +578,25 @@
     </p>
 
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const elements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    elements.forEach(el => observer.observe(el));
+
+});
+</script>
    <script>
 const sections = document.querySelectorAll('section');
 
@@ -612,6 +630,36 @@ sections.forEach(section => {
 });
 </script>
 
+    <script>
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+
+      const children = Array.from(entry.target.children);
+      children.forEach((child, index) => {
+        child.style.opacity = 0;
+        child.style.transform = 'translateY(15px)';
+        child.style.transition =
+          `opacity 0.8s ease-out ${index * 0.14}s, transform 0.8s ease-out ${index * 0.14}s`;
+
+        requestAnimationFrame(() => {
+          child.style.opacity = 1;
+          child.style.transform = 'translateY(0)';
+        });
+      });
+
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+sections.forEach(section => observer.observe(section));
+</script>
+
 </body>
 </html>
-
