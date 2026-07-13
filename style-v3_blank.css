@@ -122,12 +122,85 @@ body {
     text-align: center;
 }
 
+/*
+
+OLD HERO STYLES
+Retained after recovery.
+Superseded by master hero block.
 .hero-image img {
     width: 100%;
-    max-width: 480px;
-    border-radius: 30px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+    max-width: 500px;
+
+    border-radius: 45% / 18%;
+
+    box-shadow:
+        0 18px 60px rgba(0,0,0,.12),
+        0 0 70px rgba(212,175,55,.12);
+
+    transition:
+        transform .8s ease,
+        box-shadow .8s ease;
+
+    position: relative;
+    z-index: 2;
 }
+*/
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 132%;
+    height: 138%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(245,236,214,.92) 0%,
+            rgba(245,236,214,.55) 58%,
+            rgba(245,236,214,0) 100%
+        );
+
+    filter: blur(55px);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 115%;
+    height: 118%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(245,236,214,.95) 0%,
+            rgba(245,236,214,.55) 58%,
+            rgba(245,236,214,0) 100%
+        );
+
+    filter: blur(26px);
+
+    z-index: 1;
+}
+
 /* =========================
    MEET REV TAARA
    ========================= */
@@ -160,9 +233,14 @@ body {
 
 .section-script {
     font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
+    font-size: 2.15rem;
+    font-weight: 400;
     color: var(--gold);
-    margin-bottom: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 26px;
+    letter-spacing: 0.2px;
+    opacity: 0.96;
 }
 
 .meet-text h2 {
@@ -172,7 +250,7 @@ body {
     margin-bottom: 30px;
 }
 
-.meet-text p {
+.meet-text p:not(.section-script) {
     margin-bottom: 22px;
     font-size: 1.1rem;
     line-height: 1.9;
@@ -563,16 +641,30 @@ h2, h3 {
     color: var(--ink);
     opacity: 0.9;
 }
-.hero-image img {
-
-    width: 420px;
-    border-radius: 18px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
-}
 .hero-image {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-image img {
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    border-radius: 22px;
+   
+    filter: contrast(1.05) saturate(1.05);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.18);
+
+    transform: translateY(0);
+
+    position: relative;
+    z-index: 2;
 }
 
 .cta-button {
@@ -788,9 +880,13 @@ body::after {
     inset: 0;
     pointer-events: none;
     z-index: 0;
+
+    background-image:
+
     opacity: 0.06;
     mix-blend-mode: multiply;
 }
+
 section {
     position: relative;
     z-index: 1;
@@ -995,7 +1091,6 @@ section:nth-child(even) {
         align-items: center;
         padding: 40px 20px;
         gap: 24px;
-        outline: 3px solid red !important;
     }
 
     .hero-content {
@@ -1100,36 +1195,6 @@ section:nth-child(even) {
     transform: scale(1.02);
     letter-spacing: 0.5px;
     color: var(--wine);
-}
-
-.hero-image img {
-    border-radius: 22px;
-    box-shadow: 0 30px 70px rgba(0,0,0,0.18);
-    transform: translateY(0px);
-}
-
-.hero {
-    outline: 3px solid red !important;
-}
-
-.hero-content {
-    outline: 2px solid blue !important;
-}
-
-.hero-image {
-    outline: 2px solid green !important;
-}
-
-.hero-container {
-    outline: 3px solid red !important;
-}
-
-.hero-content {
-    outline: 2px solid blue !important;
-}
-
-.hero-image {
-    outline: 2px solid green !important;
 }
 
 /* Fade-in animation */
@@ -1277,95 +1342,3 @@ section.visible {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 35px 90px rgba(0,0,0,0.18);
 }
-
-
-/* =========================
-   CINEMATIC LAYER SYSTEM
-   ========================= */
-
-/* --- Background breathing motion --- */
-@keyframes slowBackgroundShift {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 50% 30%; }
-  100% { background-position: 0% 0%; }
-}
-
-/* Body cinematic base */
-body {
-  background-size: 200% 200%;
-  animation: slowBackgroundShift 40s ease-in-out infinite;
-}
-
-/* Soft cinematic glow overlay */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-
-  background:
-    radial-gradient(circle at 20% 20%, rgba(201,162,39,0.08), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(91,31,42,0.06), transparent 65%);
-
-  mix-blend-mode: soft-light;
-  z-index: 0;
-}
-
-/* --- Hero float motion (cinematic breathing) --- */
-@keyframes slowFloat {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0px); }
-}
-
-.hero-image img {
-  animation: slowFloat 9s ease-in-out infinite;
-  will-change: transform;
-}
-
-/* --- Scroll reveal system --- */
-section {
-  opacity: 0;
-  transform: translateY(24px) scale(0.995);
-  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* --- CTA polish --- */
-.cta-button {
-  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.5s ease,
-              letter-spacing 0.3s ease;
-}
-
-.cta-button:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
-  letter-spacing: 0.5px;
-}
-
-/* --- Image hover luxury feel --- */
-.hero-image img,
-.meet-image img {
-  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.8s ease;
-}
-
-.hero-image img:hover,
-.meet-image img:hover {
-  animation-play-state: paused;
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 35px 90px rgba(0,0,0,0.18);
-}
-
-/* --- Safety for motion layers --- */
-.hero-content,
-.hero-image {
-  transform: translateZ(0);
-  will-change: transform;
-}
-
