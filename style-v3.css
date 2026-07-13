@@ -1353,16 +1353,15 @@ section.visible {
 ================================================== */
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: start;
 
-    min-height: 78vh;
+    gap: 40px;
 
-    padding-top: 60px;
-    padding-bottom: 20px;
+    min-height: auto;
 
-    gap: 70px;
+    padding: 60px 0 40px;
 }
 
 .hero-content {
@@ -1370,14 +1369,11 @@ section.visible {
 }
 
 .hero-image {
-    position: relative;
-
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
 
-    margin-top: -220px;
-    margin-right: 40px;
+    margin-top: -40px;
 }
 
 .hero-image img {
