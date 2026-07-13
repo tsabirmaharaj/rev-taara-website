@@ -151,6 +151,8 @@ Superseded by master hero block.
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translateY(-40px);
 }
 
 .hero-image::before {
