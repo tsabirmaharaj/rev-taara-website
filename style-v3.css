@@ -641,6 +641,7 @@ h2, h3 {
     color: var(--ink);
     opacity: 0.9;
 }
+
 .hero-image {
     position: relative;
     display: flex;
@@ -649,7 +650,7 @@ h2, h3 {
 }
 
 .hero-image img {
-    width: 420px;
+    width: 500px;
     max-width: 100%;
     height: auto;
     display: block;
