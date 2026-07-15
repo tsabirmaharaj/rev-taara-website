@@ -1317,7 +1317,7 @@ section.visible {
 
 .hero {
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1.05fr 0.75fr;
     align-items: start;
 
     gap: 40px;
@@ -1336,19 +1336,36 @@ section.visible {
     justify-content: flex-end;
     align-items: flex-start;
 
-    margin-top: -120px;     /* move upward */
-    margin-right: 40px;     /* move toward right edge */
+    margin-top: -215px;
+    margin-right: 0px;
 }
 
 .hero-image::before {
-    width: 115%;
-    height: 115%;
+    content: "";
+    position: absolute;
 
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 74%;
     transform: translate(-50%, -50%);
 
-    filter: blur(38px);
+    width: 58%;
+    height: 58%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255,223,170,.55) 0%,
+        rgba(255,223,170,.26) 22%,
+        rgba(255,223,170,.08) 44%,
+        rgba(255,223,170,0) 62%
+    );
+
+    filter: blur(16px);
+
+    opacity: .95;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .hero-image img {
