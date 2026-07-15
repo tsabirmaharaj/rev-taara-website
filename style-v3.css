@@ -1332,40 +1332,27 @@ section.visible {
 }
 
 .hero-image {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-
-    margin-top: -215px;
-    margin-right: 0px;
+    position: relative;
+    isolation: isolate;
 }
 
+/* Very subtle warm halo */
 .hero-image::before {
     content: "";
     position: absolute;
-
-    top: 46%;
-    left: 74%;
-    transform: translate(-50%, -50%);
-
-    width: 58%;
-    height: 58%;
-
-    border-radius: 50%;
-
-    background: radial-gradient(
-        ellipse at center,
-        rgba(255,223,170,.55) 0%,
-        rgba(255,223,170,.26) 22%,
-        rgba(255,223,170,.08) 44%,
-        rgba(255,223,170,0) 62%
-    );
-
-    filter: blur(16px);
-
-    opacity: .95;
+    inset: -10%;
     z-index: -1;
     pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,220,150,.22) 0%,
+            rgba(255,220,150,.10) 40%,
+            transparent 72%
+        );
+
+    filter: blur(45px);
 }
 
 .hero-image img {
