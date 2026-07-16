@@ -155,54 +155,6 @@ Superseded by master hero block.
     transform: translateY(-40px);
 }
 
-.hero-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 132%;
-    height: 138%;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            ellipse,
-            rgba(245,236,214,.92) 0%,
-            rgba(245,236,214,.55) 58%,
-            rgba(245,236,214,0) 100%
-        );
-
-    filter: blur(55px);
-
-    z-index: 1;
-
-    pointer-events: none;
-}
-
-.hero-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 115%;
-    height: 118%;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            ellipse,
-            rgba(245,236,214,.95) 0%,
-            rgba(245,236,214,.55) 58%,
-            rgba(245,236,214,0) 100%
-        );
-
-    filter: blur(26px);
-
-    z-index: 1;
-}
-
 /* =========================
    MEET REV TAARA
    ========================= */
