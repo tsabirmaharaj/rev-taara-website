@@ -1235,7 +1235,7 @@ section.visible {
 @media (max-width: 768px) {
 
     .hero-image {
-        margin-top: 20px;
+        margin-top: 32px;
         margin-right: 0;
         justify-content: center;
     }
