@@ -1227,3 +1227,22 @@ section.visible {
     height: auto;
     display: block;
 }
+
+/* ==========================================
+   MOBILE HERO PORTRAIT POSITION
+========================================== */
+
+@media (max-width: 768px) {
+
+    .hero-image {
+        margin-top: 20px;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 320px;
+        max-width: 90vw;
+    }
+
+}
