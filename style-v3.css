@@ -1246,3 +1246,31 @@ section.visible {
     }
 
 }
+
+/* ==========================================
+   MOBILE HERO LAYOUT
+========================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .hero-image img {
+        width: 320px;
+        max-width: 90vw;
+    }
+}
