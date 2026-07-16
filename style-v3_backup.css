@@ -109,51 +109,10 @@ body {
     z-index: 2;
 }
 
-.hero-image img {
-    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
-}
-
 /* =========================
    BUTTON RESET (SAFE STATE)
    ========================= */
 
-.hero-image {
-    flex: 0 0 450px;
-    text-align: center;
-}
-
-/*
-
-OLD HERO STYLES
-Retained after recovery.
-Superseded by master hero block.
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-
-    border-radius: 45% / 18%;
-
-    box-shadow:
-        0 18px 60px rgba(0,0,0,.12),
-        0 0 70px rgba(212,175,55,.12);
-
-    transition:
-        transform .8s ease,
-        box-shadow .8s ease;
-
-    position: relative;
-    z-index: 2;
-}
-*/
-
-.hero-image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transform: translateY(-40px);
-}
 
 /* =========================
    MEET REV TAARA
@@ -596,30 +555,6 @@ h2, h3 {
     opacity: 0.9;
 }
 
-.hero-image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image img {
-    width: 500px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-
-    filter: contrast(1.05) saturate(1.05);
-
-    box-shadow:
-        0 30px 70px rgba(0,0,0,.18);
-
-    transform: translateY(0);
-
-    position: relative;
-    z-index: 2;
-}
-
 .cta-button {
     display: inline-block;
     padding: 18px 40px;
@@ -754,7 +689,6 @@ img {
     -webkit-font-smoothing: antialiased;
 }
 
-.hero-image img,
 .meet-image img {
     filter: saturate(1.02) contrast(1.02);
 }
@@ -790,10 +724,6 @@ img {
 .hero-content {
     position: relative;
     z-index: 2;
-}
-
-.hero-image img {
-    filter: contrast(1.05) saturate(1.05);
 }
 
 section {
@@ -863,10 +793,6 @@ body::after {
     background: #fdfaf5;
 }
 
-.hero-image {
-    position: relative;
-}
-
 .hero-script {
     opacity: 0.9;
 }
@@ -899,11 +825,6 @@ body::after {
 .hero-content {
     position: relative;
     z-index: 3;
-}
-
-.hero-image {
-    position: relative;
-    z-index: 2;
 }
 
 body::before {
@@ -972,11 +893,6 @@ section:nth-child(even) {
     z-index: 3;
 }
 
-.hero-image {
-    position: relative;
-    z-index: 2;
-}
-
 .hero {
     outline: 3px solid red;
 }
@@ -1021,13 +937,7 @@ section:nth-child(even) {
         text-align: center;
     }
 
-    .hero-image {
-        width: 100%;
-        max-width: 420px;
-        margin: 0 auto;
-    }
-
-    .hero-image img {
+       .hero-image img {
         width: 100%;
         height: auto;
         display: block;
@@ -1092,21 +1002,12 @@ section:nth-child(even) {
     z-index: 2;
 }
 
-.hero-image {
-    position: relative;
-    z-index: 2;
-}
-
 .hero {
     outline: 2px solid rgba(255, 0, 0, 0.35);
 }
 
 .hero .hero-content {
     outline: 2px solid rgba(0, 128, 255, 0.35);
-}
-
-.hero .hero-image {
-    outline: 2px solid rgba(0, 255, 0, 0.35);
 }
 
 .hero-content h1 {
