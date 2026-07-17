@@ -570,11 +570,6 @@ h2, h3 {
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.cta-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
-}
-
 section {
     padding: 140px 8%;
 }
@@ -893,10 +888,6 @@ section:nth-child(even) {
     z-index: 3;
 }
 
-.hero {
-    outline: 3px solid red;
-}
-
 .hero::after {
     content: "";
     position: absolute;
@@ -1000,14 +991,6 @@ section:nth-child(even) {
 .hero-content {
     position: relative;
     z-index: 2;
-}
-
-.hero {
-    outline: 2px solid rgba(255, 0, 0, 0.35);
-}
-
-.hero .hero-content {
-    outline: 2px solid rgba(0, 128, 255, 0.35);
 }
 
 .hero-content h1 {
@@ -1265,7 +1248,7 @@ section.visible {
 
     .hero-image {
         justify-content: center;
-        margin-top: 0;
+        margin-top: 48;
         margin-right: 0;
     }
 
