@@ -39,14 +39,6 @@ body {
     line-height: 1.7;
 }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-}
-
 .hero-content {
     flex: 1;
     max-width: 650px;
@@ -175,14 +167,7 @@ body {
     color: #5b1f2a;
     font-weight: 500;
 }
-.hero-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    color: #7b5a5a;
-    margin-bottom: 35px;
-    margin-top: 0;
-}
+
 /* =========================
    TELL ME YOUR STORY
    ========================= */
@@ -618,15 +603,6 @@ section {
 
 #contact {
     padding: 160px 8%;
-}
-
-body {
-    background: linear-gradient(
-        to bottom,
-        #fdfaf5,
-        #fbf7f1,
-        #fdfaf5
-    );
 }
 
 section {
