@@ -457,6 +457,10 @@ footer {
    SECTION FLOW DIVIDERS
    ========================= */
 
+section {
+    position: relative;
+}
+
 /* soft separation between sections */
 section:not(:last-child)::after {
     content: "";
@@ -678,6 +682,15 @@ img {
     pointer-events: none;
 }
 
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+section {
+    position: relative;
+}
+
 section::after {
     content: "";
     position: absolute;
@@ -834,6 +847,11 @@ section:nth-child(even) {
     background:
         radial-gradient(circle at 10% 80%, rgba(201,162,39,0.08), transparent 45%),
         radial-gradient(circle at 90% 70%, rgba(91,31,42,0.06), transparent 50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
 }
 
 .hero::after {
