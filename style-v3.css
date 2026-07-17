@@ -89,12 +89,6 @@ body {
     );
 }
 
-
-.hero-container {
-    position: relative;
-    z-index: 2;
-}
-
 .hero-text,
 .hero-image {
     position: relative;
@@ -419,10 +413,6 @@ footer {
 /* =========================
    FLOW & RHYTHM SYSTEM
    ========================= */
-
-section {
-    position: relative;
-}
 
 /* HERO stays strong and full */
 .hero {
